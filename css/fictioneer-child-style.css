@@ -21,6 +21,18 @@ body {
   margin: -5px auto 0;
   max-width: var(--site-width);
 }
+#full-navigation .main-navigation__background {
+  top: unset;
+  background: var(--navigation-background-sticky);
+  min-height: var(--navigation-height); /* Must match the navigation! */
+  opacity: 1;
+}
+footer .footer__wrapper{
+	top: unset;
+	background: var(--navigation-background-sticky);
+	opacity: 1;
+}
+
 /* Modify the logo CSS with fixed height for desktop and mobile */
 
 
