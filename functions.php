@@ -246,4 +246,14 @@ function remove_ols_metabox() {
     }
 }
 add_action( 'add_meta_boxes', 'remove_ols_metabox', 999 );
+
+function child_add_custom_fonts( $fonts ) {
+  $fonts[] = array(
+    'css' => 'Times New Bastard',
+    'name' => 'Times New Bastard', // Display name
+  );
+
+  return $fonts;
+}
+add_filter( 'fictioneer_filter_fonts', 'child_add_custom_fonts' );
 ?>
