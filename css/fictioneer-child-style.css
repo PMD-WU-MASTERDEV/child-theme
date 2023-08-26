@@ -21,37 +21,52 @@ body {
   margin: -5px auto 0;
   max-width: var(--site-width);
 }
-#full-navigation .main-navigation__background {
-  top: unset;
-  background: var(--navigation-background-sticky);
-  min-height: var(--navigation-height); /* Must match the navigation! */
-  opacity: 1;
-}
-footer .footer__wrapper{
-	top: unset;
-	background: var(--navigation-background-sticky);
-	opacity: 1;
-}
 
 /* Modify the logo CSS with fixed height for desktop and mobile */
 
-
- /* For mobile devices, set a different fixed height */
-/*.child-navigation-identity img {
-  max-height: 40px; 
-  width: auto;
+@font-face {
+  font-family: "Times New Bastard";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/TimesNewBastard-RegularWeb.woff2") format("woff2"),
+       url("../fonts/TimesNewBastard-RegularWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "Times New Bastard";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/TimesNewBastard-ItalicWeb.woff2") format("woff2"),
+       url("../fonts/TimesNewBastard-ItalicWeb.woff") format("woff");
 }
 
-@media only screen and (min-width: 1024px) {
-  .child-navigation-identity img {
-    max-height: 64px; 
-    width: auto;
-  }
-}*/
-/* Adjust max-width based on --nav-observer-offset for sticky navigation */
-/*.child-navigation-identity {
-  padding: 0 10px;
-  margin: 0 auto;
-  max-width: calc(var(--site-width) - var(--nav-observer-offset));
-} */
+@font-face {
+  font-family: "Times New Bastard";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/TimesNewBastard-BoldWeb.woff2") format("woff2"),
+       url("../fonts/TimesNewBastard-BoldWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "Times New Bastard";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/TimesNewBastard-BoldItalicWeb.woff2") format("woff2"),
+       url("../fonts/TimesNewBastard-BoldItalicWeb.woff") format("woff");
+}
 
+.chapter-formatting[style*="Times New Bastard"] {
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
+}
